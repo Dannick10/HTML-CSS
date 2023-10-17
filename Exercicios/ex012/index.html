@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+    <style>
+      
+    </style>
+</head>
+<body>
+    <h1>Imagem dinámicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente diminua o tamanho da janela do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/fotop.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/fotom.png" type="image/png">
+        <img src="Imagens/fotog.png" alt="imagem flexivel">
+    </picture>
+
+    <p>Reproduzir audios</p>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/Lyric Melody for Solo Bass - John Patitucci.mp3" type="audio/mpeg">
+        <p>Infelizmente seu navegador não consegue reproduzir o audio <a href="midia/Lyric Melody for Solo Bass - John Patitucci.mp3"></a>Clique aqui para baixar o arquivo</p>
+    </audio>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/T-rAQjkL1VU?si=SyGEJ2zku3sYDocF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+</body>
+</html>

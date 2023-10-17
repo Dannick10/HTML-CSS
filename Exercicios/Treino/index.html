@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    <style>
+        body{
+            background-color: rgb(126, 126, 126);
+        }
+
+        h1{
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            font-family: 'Segoe UI';
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation: mymove 2s infinite;
+        }
+           @keyframes mymove {
+            from {left: 0px;}
+            to {left: 500px;}
+            
+           }
+
+
+           @keyframes myNEWmove {
+            from {width: 0px;}
+            to {left: 500px; background-color: blue;}
+            
+           }
+    
+    </style>
+
+</head>
+<body>
+    <h1>Mude a animação com Java script</h1>
+
+    <p>Click no botão "mude aqui" e mude o keyframe usado na animação</p>
+    <button onclick="myFunction()">Mude aqui
+        
+    </button>
+    <div id="myDIV"></div>
+
+    <script>
+        function myFunction(){
+            document.getElementById("myDIV").style.animationName = "myNEWmove";
+        }
+    </script>
+
+    
+</body>
+</html>
