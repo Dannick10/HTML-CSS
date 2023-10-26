@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+        body{
+            background-color: rgb(231, 231, 231);
+           width: 100vh;
+           font-size: 0.7em;
+           overflow: hidden;
+        }
+    </style>
+    <title>Exemplo de formulario</title>
+</head>
+<body>
+    <h1>Exemplos de formularios</h1>
+        
+   <form action="" method="post">
+    
+        <p>
+            <label for="iset">Estado</label>
+            <select name="Estado" id="iest">
+    
+                <optgroup label="Região sudeste">
+                    <option value="MG">Minas gerais</option>
+                    <option value="RJ">Rio de janeiro</option>
+                    <option value="SP">São Paulo</option>
+                </optgroup>
+    
+                <optgroup label="Região nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="PI">Piaui</option>
+                </optgroup>
+    
+            </select>
+        </p>
+    
+    
+        <p>
+            <label for="iprof">Profissão:</label>
+            <input type="text" name="prof" id="iprof" list="listprof">
+    
+            <datalist id="listprof">
+                <option>Administrador</option>
+                <option>Contabilista</option>
+                <option>Desenvolvedor</option>
+                <option>Professor</option>
+            </datalist>
+    
+        </p>
+    
+        <p><label for="imsg">Mensagem: </label></p>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+        </forms>
+    
+</body>
+</html>
