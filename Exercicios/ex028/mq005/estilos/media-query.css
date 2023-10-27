@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* TYPICAL DEVICE BREAKPOINTS
+pequenas telas: at-e600px
+celular: de 600px até 768px
+tablet: 768px até 992px 
+desktop: 992px até 1200px 
+Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    i#burguer {
+        display: none;
+    }
+
+    body { 
+        display: flex;
+        flex-direction: row;
+    }
+
+   
+    menu { 
+        display: block;
+        background-color: rgb(54, 50, 50);
+    }
+
+    main {
+        width: 768px;
+    }
+
+}
+
+
+@media screen and (min-width: 992px ){
+    i#burguer {
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+
+    menu > ul > li {
+        display: inline-block;
+    }
+
+    main {
+        width: 800px;
+    }
+
+}
+
+@media print {
+    body,html {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: white;
+    }
+
+    menu {
+        display: none;
+    }
+}
+

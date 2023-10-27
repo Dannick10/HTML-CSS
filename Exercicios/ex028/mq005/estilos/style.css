@@ -7,8 +7,9 @@
     padding: 0;
 }
 
-body, html {
+ html, body{
    background-color: lightgrey;
+   
 }
 
 header {
@@ -56,7 +57,7 @@ menu > ul > li > a:hover {
 }
 
 main { 
-    width: 90vw;
+    width: 80vw;
     background: white;
     margin: auto;
     padding: 10px;
